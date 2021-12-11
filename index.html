@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nicolas Enea</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>nicolasenea.</h1>
+        <h2>Software Engineer / 1337 / Human</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">contact</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="tel:+8860905057974"><i class="fas fa-phone"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="mailto:nicolasenea17@gmail.com"><i class="fas fa-envelope"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://github.com/nicoenea"><i class="fab fa-github"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" href="https://www.linkedin.com/in/nicolasenea/"><i class="fab fa-linkedin"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>experience.</h1>
+        
+        <section>
+            <h2>Software Engineer</h2>
+            <h3>Ficus Data</h3>
+            <h5>October 2020 - Present</h5>
+            <p>
+                -  Conceptualized, developed, and tested different kinds of software, including work in the following different areas: front-end development, back-end development, embedded systems, and mobile app development.  
+            </p>
+            <p>
+                -  Mobile IoT Application developed using Flutter. Made and used REST APIs to transfer data.
+            </p>
+            <p>
+                -  Application of machine learning algorithms and system development on an embedded Linux device. Successfully deployed to multiple locations.
+            </p>
+            <p>
+                -  Web Apps for the monitoring and control of the above mentioned projects. Created and implemented APIs to transfer and store data values.
+            </p>
+            <p> 
+                -  Made use of the Google Cloud Platform to handle SQL Tables, Version Control, deploying websites, and storing image data. 
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Python</div>
+                <div><i class="fas fa-circle"></i>&nbsp;MySQL</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Dart (Flutter)</div>
+                <div><i class="fas fa-circle"></i>&nbsp;JavaScript</div>
+                <div><i class="fas fa-circle"></i>&nbsp;HTML/CSS</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Bash (Linux)</div>
+
+
+            </div>
+            <!-- <button class="btn_one">button 1</button>
+            <button class="btn_two">button 2</button> -->
+        </section>
+        <section>
+            <h2>Chinese/English Translation</h2>
+            <h3>National Dong Hwa University</h3>
+            <h5>May 2018 - August 2020</h5>
+            
+            <p>
+                Assistance in translating and correcting Chinese documents into English for student dormitory announcements, school events, and other important information for international students.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;中文</div>
+                <div><i class="fas fa-circle"></i>&nbsp;English</div>
+            </div>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about.</h1>
+            <section>
+                <h2>about me</h2>
+                <p>
+                    Proactive, customer-oriented software engineer with varied work experience, including machine learning system development, embedded Linux development and deployment, database/backend handling, and mobile app development. Have presented ideas/products to large crowds in the past.
+                </p>
+                <p>
+                    I was awarded a complete scholarship to come to Taiwan in 2015. Thanks to TaiwanICDF, I was able to carry out my studies in National Dong Hwa University completely free of charge. Throughout my college years, I obtained various awards and other scholarships, including an award for Outstanding Community Service and the PTSGI Translation Scholarship.  After graduation, I joined a start-up company and am working hard to push us into success.
+                </p>
+            </section>
+            
+            <section>
+                <h2>skills</h2>
+                <h5>languages</h5>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;Español</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;中文</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;English</div>
+                </div>
+                <h5>programming</h5>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;Python</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;MySQL</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;JavaScript</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Dart</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML/CSS</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;C/C++</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Java</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Swift</div>
+        
+                </div>
+            </section> 
+                
+                
+            
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contact.</h1>
+            <section>
+                <h2>contact me</h2>
+                <p>
+                    <form>
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form> 
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+            made on earth by a human <br> <a href="https://nicoenea.github.io">Nicolas Enea</a>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
