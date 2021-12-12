@@ -333,10 +333,10 @@ body {
     height:5px;
 }
 ::-webkit-scrollbar-track {
-    background: #fff; 
+    background: rgb(215, 88, 154); 
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(215, 88, 154)
+    background: rgb(110, 44, 78)
 ; 
 }
 ::-webkit-scrollbar-thumb:hover {
