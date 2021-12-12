@@ -381,6 +381,7 @@ body {
     }
     #middle h2 {
         font-size: 25px;
+        color: red;
     }
     #middle table {
         width:80%;
