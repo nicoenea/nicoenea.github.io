@@ -379,9 +379,11 @@ body {
         width:90vw;
         padding:0px 5vw;
     }
+    #middle h1 {
+        font-size: 70px;
+    }
     #middle h2 {
-        color: red;
-        font-size: 20px;
+        font-size: 22.5px;
     }
     #middle table {
         width:80%;
