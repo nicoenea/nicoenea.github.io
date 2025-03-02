@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Software Engineer",
+    "company": "Ficus Data",
+    "period": "October 2020 - Present",
+    "responsibilities": [
+      "- Conceptualized, developed, and tested different kinds of software, including work in the following different areas: front-end development, back-end development, embedded systems, and mobile app development.",
+      "- Mobile IoT Application developed using Flutter. Used GCP to make and use REST APIs to transfer data from and to a MySQL database.",
+      "- Application of machine learning algorithms and system development on an embedded Linux device. Using the device's hardware to make inferences. Device was successfully deployed to multiple locations.",
+      "- Created web apps for the monitoring and control of the above mentioned projects. Created and implemented APIs to transfer and store data values.",
+      "- Made use of the Google Cloud Platform to handle SQL Tables, Version Control, deploying websites, and storing image data.",
+      "- Developed and launched the frontend for an educational platform within 1.5 months using Vue.js"
+    ],
+    "skills": [
+      "Python",
+      "MySQL",
+      "Dart (Flutter)",
+      "JavaScript",
+      "HTML/CSS",
+      "Bash (Linux)"
+    ]
+  },
+  {
+    "title": "Chinese/English Translation",
+    "company": "National Dong Hwa University",
+    "period": "May 2018 - August 2020",
+    "responsibilities": [
+      "- Assistance in translating and correcting Chinese documents into English for student dormitory announcements, school events, and other important information for international students."
+    ],
+    "skills": [
+      "\u4e2d\u6587",
+      "English"
+    ]
+  }
+]
