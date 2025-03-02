@@ -45,3 +45,5 @@ dist/
 
 # amplify builds
 .amplify
+
+CLAUDE.md

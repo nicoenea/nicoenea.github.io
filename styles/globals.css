@@ -1,0 +1,265 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import animate.css */
+@import 'animate.css';
+
+body {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1617396900799-f4ec2b43c7ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80") center center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(212, 149, 182);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(110, 44, 78);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(78, 32, 56, 0.8);
+}
+
+::selection {
+  color: #fff;
+  background: rgb(136, 52, 96);
+}
+
+/* Custom animations */
+.animated.slideInLeft {
+  animation-name: slideInLeft !important;
+}
+
+.animated.slideOutLeft {
+  animation-name: slideOutLeft !important;
+}
+
+.animated.slideInRight {
+  animation-name: slideInRight !important;
+}
+
+.animated.slideOutRight {
+  animation-name: slideOutRight !important;
+}
+
+.animated.slideInUp {
+  animation-name: slideInUp !important;
+}
+
+.animated.slideOutDown {
+  animation-name: slideOutDown !important;
+}
+
+.animated.slideInDown {
+  animation-name: slideInDown !important;
+}
+
+.animated.bounceOutLeft {
+  animation-name: bounceOutLeft !important;
+}
+
+.animated.bounceOutRight {
+  animation-name: bounceOutRight !important;
+}
+
+.animated.fadeIn {
+  animation-name: fadeIn !important;
+}
+
+.animated.fadeOut {
+  animation-name: fadeOut !important;
+}
+
+.animated.zoomIn {
+  animation-name: zoomIn !important;
+}
+
+/* Apply animation duration */
+.animated {
+  animation-duration: 0.8s !important;
+  animation-fill-mode: both !important;
+  animation-timing-function: ease-in-out !important;
+}
+
+/* Box classes for initial animations */
+.box1 {
+  background: rgb(215, 88, 154);
+}
+
+.box2 {
+  background: rgb(215, 88, 154);
+  margin-left: -5px;
+}
+
+.onlywide {
+  display: inline-block;
+}
+
+/* Responsive design fixes */
+@media (max-width: 768px) {
+  #about, #work, #contact {
+    display: none !important;
+  }
+  
+  #menu {
+    display: inline-block !important;
+  }
+  
+  #middle {
+    width: 90vw;
+    padding: 0 5vw;
+  }
+  
+  #middle h1 {
+    font-size: 70px;
+  }
+  
+  #middle h2 {
+    font-size: 22.5px;
+  }
+  
+  #middle table {
+    width: 80%;
+  }
+  
+  #footer {
+    text-align: center;
+  }
+  
+  .onlywide {
+    display: none !important;
+  }
+  
+  .box2 {
+    margin-left: 0 !important;
+  }
+}
+
+/* Container and animation fixes */
+.container {
+  background: rgba(20, 33, 61, 0.95); /* Dark blue background */
+  position: fixed;
+  width: 90% !important;
+  height: 90% !important;
+  max-height: 100vh;
+  overflow-y: auto;
+  display: none;
+  top: 5% !important;
+  padding: 5%;
+  z-index: 10;
+  color: #f0f0f0; /* Light grey text */
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.container h1 {
+  color: white;
+  font-weight: bold;
+}
+
+.container h2 {
+  color: #e0e0e0; /* Slightly darker than white */
+  font-weight: 600;
+}
+
+.container h3 {
+  color: #d0d0d0; /* Slightly darker than h2 */
+}
+
+.container h5 {
+  color: #b0b0b0; /* More muted color for less important headings */
+}
+
+.container p {
+  color: #c0c0c0; /* Good contrast on dark background */
+}
+
+/* Styling for skill items */
+#used div {
+  border-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white border */
+  background-color: rgba(255, 255, 255, 0.1); /* Very subtle background */
+}
+
+/* Form elements */
+.container form input,
+.container form textarea {
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+.container form input:focus,
+.container form textarea:focus {
+  border-bottom-color: rgba(255, 255, 255, 1);
+}
+
+/* Button styling */
+.btn_one {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+
+.btn_one:hover, button[type="submit"]:hover {
+  background-color: white;
+  color: rgba(20, 33, 61, 1) !important;
+}
+
+/* Center all containers */
+#about_container, #work_container, #contact_container {
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%) !important;
+  width: 80% !important; /* Slightly narrower for better appearance */
+  margin-top: 2.5% !important; /* Adjust top position for better centering */
+  transition: none !important; /* Disable any unwanted transitions */
+  will-change: transform, opacity !important; /* Performance hint for animations */
+}
+
+/* Specific z-index to ensure proper layering */
+#about_container {
+  z-index: 15 !important;
+}
+
+#work_container {
+  z-index: 15 !important;
+}
+
+#contact_container {
+  z-index: 15 !important;
+}
+
+/* Particles JS positioning fix */
+#particles-js {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+/* Mobile menu styling */
+@media (max-width: 768px) {
+  #menu {
+    display: inline-block !important;
+  }
+  
+  #about, #work, #contact {
+    display: none !important;
+  }
+}
+
+@media (min-width: 769px) {
+  #menu {
+    display: none !important;
+  }
+}
