@@ -1,6 +1,6 @@
-# Nicolas Enea Portfolio Website (Next.js Version)
+# Nicolas Enea Portfolio Website
 
-This is a modern rebuild of the original portfolio website using Next.js, TypeScript, and Tailwind CSS. The project maintains the same design, animations, and functionality as the original portfolio but with a modern tech stack.
+This is a portfolio website using Next.js, TypeScript, and Tailwind CSS.
 
 ## Technologies Used
 
